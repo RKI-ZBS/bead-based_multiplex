@@ -71,14 +71,14 @@ install.packages(c("tidyverse", "ggplot2", "ComplexHeatmap", "caret", "yardstick
 | -------------- | -------------------------------------------- | ------------------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------- |
 | **Figure 2**   | Compare IgG & IgM across serogroups & panels | `Figure_2_Compare_Panels_Rev_02_V2.R` | `dataInputComparePanels.Rdata`                                                        | Spider plots, antigen ratios, IgM plots                 |
 | **Figure 3**   | ML performance comparison                    | `Figure_3_Rev_02.R`                   | `dataInMeta.Rdata`, `statisticalDataCombined.Rdata`                                   | F1 plots, circular misclassification plots, freq tables |
-| **Figure S8**  | Confusion matrices                           | `Figure_S08_Conf_Mat_Rev_02_V5.R`     | `ensembleCombined_Rev_02.Rdata`                                                       | Confusion matrix PDFs & PNGs                            |
 | **Figure 4**   | Validation panel analysis                    | `Figure_4_Val_Rev_02_V6.R`            | `dataInputComparison.Rdata`, `ensemblePrediction_Rev_02.Rdata`, `heatmap_input.Rdata` | IgG/IgM heatmaps, ensemble confusion matrices           |
 | **Figure S1**  | Comparison with ELISA/IFA/NT                 | `Fig_1_Method_Comparison.R`           | Multiple `.Rdata` inputs                                                              | Correlation plots, Passing-Bablok regression            |
 | **Figure S6**  | Bead coupling quality                        | `analyseCoupling.R`                   | `dataInputBatch.Rdata`, `dataInputPlotting.Rdata`                                     | Coupling control and variability plots                  |
-| **Figure S9**  | Feature elimination                          | See script                            | `dataInputFeatElim.Rdata`                                                             | F1 impact plots                                         |
-| **Figure S11** | ROC performance                              | See script                            | `dataInWide.Rdata`                                                                    | ROC curves, threshold parameters                        |
-| **Figure S12** | Density plots                                | See script                            | `dataInputComparePanels.Rdata`, `heatmap_input.Rdata`                                 | Density plots                                           |
-| **Figure S13** | Reproducibility                              | See script                            | `dataInRep.Rdata`, `dataInRepSpoxFiltered.Rdata`                                      | Reproducibility figure                                  |
+| **Figure S8**  | Confusion matrices                           | `Figure_S08_Conf_Mat_Rev_02_V5.R`     | `ensembleCombined_Rev_02.Rdata`                                                       | Confusion matrix PDFs & PNGs                            |
+| **Figure S9**  | Feature elimination                          | `Analyse_Benchmark_V6.R`              | `dataInputFeatElim.Rdata`                                                             | F1 impact plots                                         |
+| **Figure S11** | ROC performance                              | `Figure_S11_Classical_ROC_Rev_02.R`   | `dataInWide.Rdata`                                                                    | ROC curves, threshold parameters                        |
+| **Figure S12** | Density plots                                | `densityPlot.R`                       | `dataInputComparePanels.Rdata`, `heatmap_input.Rdata`                                 | Density plots                                           |
+| **Figure S13** | Reproducibility                              | `plotComparison_V3.R`                 | `dataInRep.Rdata`, `dataInRepSpoxFiltered.Rdata`                                      | Reproducibility figure                                  |
 
 *(Full details are in each figure’s folder.)*
 
@@ -108,4 +108,4 @@ install.packages(c("tidyverse", "ggplot2", "ComplexHeatmap", "caret", "yardstick
 This repository is distributed under the [MIT License](LICENSE).
 If you use this code or data, please cite:
 
-> Surtees et al. *Differentiation between mpox infection and MVA immunization by a novel machine learning–supported serological multiplex assay*, **\[Journal Name, Year, DOI]**
+> Surtees et al. *Differentiation between mpox infection and MVA immunization by a novel machine learning–supported serological multiplex assay*, **\[Under Revision]**
