@@ -8,7 +8,7 @@ serological multiplex assay" by Surtees et al.
 ## Installation and usage
 Install R (version 4.3.0) and R Studio (2023-06-2). Install all necessary packages, which are listed in each R script before running the scripts. All necessary data files (input and output) are contained within the different folders.
 
-## Figure_01_Method_Comparison
+## Figure_S01_Method_Comparison
 Compare results of novel multiplex assay with reference methods (ELISA, IFA, and NT) for a panel of selected sera, which have been quantified by the different methods. Method comparison is performed in the R script `Fig_1_Method_Comparison.R`.
 
 Depends on the following input files:
