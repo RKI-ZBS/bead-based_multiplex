@@ -23,30 +23,29 @@ The following output files are generated:
 - parampaBa.xlsx: Parameters for Passing-Bablock-Regression save as Excel-file
 
 ## Figure_02_Compare_Panels
-Plot IgG and IgM results of the differen serogroups (pre-immune, MVA, MPXV) and panels (acute, epi) stratified by childhood immunisation against smallpox. Analysis and plotting is performed in the R script `Figure_2_Compare_Panels.R`.
+Plot IgG and IgM results of the differen serogroups (pre-immune, MVA, MPXV) and panels (acute, epi) stratified by childhood immunisation against smallpox. Analysis and plotting is performed in the R script `Figure_2_Compare_Panels_Rev_02_V2.R`.
 
 Depends on the following input files:
 - `input/dataInputComparePanels.Rdata`
 
 The following output files are generated:
-- Figure_2: Spider plots and plots of selected antigens from the acute and epi panel. Plot of ratios of selected homologue antigen pairs.
-- Figure S2: Plot of antigens not contained in figure 2
-- Figure S3: Plot of ratios for antigen pairs not contained in figure 2
+- Figure 2: Spider plots and plots of selected antigens from the acute and epi panel. Plot of ratios of selected homologue antigen pairs.
+- Figure S3: Plot of antigens not contained in figure 2
+- Figure S4: Plot of IgM results
+- Figure S5: Plot of ratios not contained in Figure 2
 
-## Figure_04_ML_Performance
-Reads assay performance of the comparison of different ML algorithms tested on different panels. Analysis and plotting is performed in the R script `Figure_4.R`.
+## Figure_03_ML_Performance
+Reads assay performance of the comparison of different ML algorithms tested on different panels. Analysis and plotting is performed in the R script `Figure_3_Rev_02.R`.
 
 Depends on the following input files:
-- `input/dataIn.Rdata`
 - `input/dataInMeta.Rdata`
-- `input/dataInputAnalyte.Rdata`
-- `input/dataInRep.Rdata`
 - `input/statisticalDataCombined.Rdata`
 
 The following output files are generated:
 - Fig4ab.pdf: Plot of F1 scores for the comparison of the different algorithms and panels. Plot of specificity of GBC and LDA on the negative control panel
-- Fig4_all_xgboost_lda.pdf: Circular plot of misclassifications on all data set, stratified by childhood smallpox vaccionation
-- freqTableGBCLDA.xlsx: Frequency table underlying the circula plot in figure 4
+- Fig3_all_xgboost_lda.pdf: Circular plot of misclassifications on all data set, stratified by childhood smallpox vaccionation for GBC and LDA
+- Fig3_all_rf.pdf: Circular plot of misclassifications on all data set, stratified by childhood smallpox vaccionation for RF
+- freqTableRFGBCLDA.xlsx: Frequency table underlying the circular plots in figure 3
 - freqTableAll.Rdata: Frequence table for misclassificaton for other algorithms
 - supTablePerformanceRev.Rdata: Data underlying Table S9 (Generated using SupportingTablesPerformanceRev.Rmd -> Generates Docx file)
 
