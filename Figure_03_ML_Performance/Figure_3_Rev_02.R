@@ -58,7 +58,7 @@ plotPerformance <-
         plot.title = element_text(hjust = 0.5),
         plot.subtitle = element_text(hjust = 0.5))
 
-
+ggsave("output/Fig3a.pdf", plotPerformance, width = 12, height = 4, dpi = 600)
 
 ####
 # Generate supporting table with combined performance data
@@ -255,6 +255,7 @@ circPlot(c("all all"), c("rf"), c("IgM IgG"), c("No"))
 title(outer=outer,adj=adj,main="Naive IgM IgG",cex.main=cex,col="black",font=1,line=line)
 
 dev.off()
+
 
 
 
