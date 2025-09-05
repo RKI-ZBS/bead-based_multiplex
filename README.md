@@ -60,7 +60,7 @@ install.packages(c("tidyverse", "ggplot2", "ComplexHeatmap", "caret", "yardstick
 
 * Navigate to the corresponding figure/table folder.
 * Open the respective R script in RStudio.
-* Ensure the required input `.Rdata` files are present.
+* Ensure the required input files are present.
 * Run the script to generate figures/tables.
 
 ---
@@ -100,7 +100,6 @@ install.packages(c("tidyverse", "ggplot2", "ComplexHeatmap", "caret", "yardstick
 * Unified naming conventions for figures & tables.
 * Added structured tables summarizing inputs & outputs.
 * Improved Markdown formatting for GitHub readability.
-* Added badges for R version, RStudio, Zenodo DOI, and repo status.
 
 ---
 
