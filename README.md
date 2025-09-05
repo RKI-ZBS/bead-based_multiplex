@@ -4,7 +4,7 @@
 *Surtees et al.*
 
 [![R Version](https://img.shields.io/badge/R-v4.3.0-blue.svg)](https://cran.r-project.org/)
-[![RStudio](https://img.shields.io/badge/RStudio-2023.06.2-blue.svg)](https://posit.co/)
+[![RStudio](https://img.shields.io/badge/RStudio-2025.05.1-blue.svg)](https://posit.co/)
 [![Last Commit](https://img.shields.io/github/last-commit/RKI-ZBS/bead-based_multiplex/)](https://github.com/RKI-ZBS/bead-based_multiplex/commits/main)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
