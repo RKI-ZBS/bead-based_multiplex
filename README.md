@@ -109,13 +109,37 @@ The following output files are generated (amoung others):
 - SFig_plotROC.png: Figure S6 ROC curve
 
 
-## Figure_S08_Classical_ROC
-Generate plot for the performance of single antigens based on ROC analysis as well as threshold values. 
+## Figure_S09_Rec_Feat_Select
+Generates plot depicting the impact of antigen removal on the F1 score of the GBC model. 
+
+Depends on the following input files: 
+- `input/dataInputFeatElim.Rdata`
+
+The following output files are generated:
+- Fig_S9_benchmark.png: Figure S9
+
+
+## Figure_S11_Classical_ROC
+Generates plot for the performance of single antigens based on ROC analysis as well as threshold values. 
 
 Depends on the following input files: 
 - `input/dataInWide.Rdata`
-- `input/plotImprovePerformance.Rdata`
 
 The following output files are generated:
-- plotFig6.png: Figure S8
-- ROC_parameters_classic.xlsx: Table S11 with performance parameters for ROC analysis for single antigens
+- Fig_S11.png: Figure S11
+- ROC_parameters_classic.xlsx: Table S12 with performance parameters for ROC analysis for single antigens
+
+
+## Figure_S12_Density_Plots
+Generates density plots of signal distribution for antigens on different cohort, overlaid with normal distibution.
+
+Depends on the following input files:
+- `input/dataInputComparePanels.Rdata`
+- `input/heatmap_input.Rdata`
+
+The following output files are generated:
+- Fig_S12.png: Figure S12
+
+
+## Figure_S13_Rev_02_Repro_Validation
+
