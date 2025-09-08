@@ -68,20 +68,20 @@ install.packages(c("tidyverse", "ggplot2", "ComplexHeatmap", "caret", "yardstick
 
 ## **Analysis & Figures**
 
-| Folder | Figure(s) / Table(s) | Purpose                                      | R Script                               | Output                                                  |
-| ------ | -------------- | -------------------------------------------- | ------------------------------------- | ------------------------------------------------------- |
-| Figure_2_Compare_Panels | **Figure 2**, **Figure S3**, **Figure S4**, **Figure S5**   | Compare IgG & IgM across serogroups & panels | `Figure_2_Compare_Panels_Rev_02_V2.R` | Spider plots, antigen ratios, IgG and IgM plots                 |
-| Figure_3ab_ML_Performance | **Figure 3**, **Table S9**   | ML performance comparison                    | `Figure_3_Rev_02.R`                   | F1 plots, circular misclassification plots, supporting table performance comparison |
-| Figure_3c_Conf_Matr | **Figure 3c**  | Confusion matrices for LDA, GBC, RF                    | `Figure_03c_Rev_02.R`                   | Plot confuction matrices, tables of ensemble predicition on combined cohort |
-| Figure_4_Val_V2 | **Figure 4**, **Fig_S10**, **Table_S10**,   | Validation panel analysis                    | `Figure_4_Val_Rev_02_V6.R`            | IgG/IgM heatmaps, ensemble confusion matrices validation, tables of ensemble prediction on validation cohort           |
-| Figure_S1_Method_Comparison | **Figure S1**, **Figure S2**  | Comparison with ELISA/IFA/NT                 | `Fig_1_Method_Comparison.R`           | Correlation plots, Passing-Bablok regression            |
-|  | **Figure S6**  | Bead coupling quality                        | `analyseCoupling.R`                   | Coupling control and variability plots                  |
-| Figure_S6_Bead_coupling | **Figure S6**  | Antigen specificity and coupling efficiency                          | `Figure_S06.R`     | Coupling control plots                          |
-| Figure_S7_8 | **Figure S7**, **Figure S8**  | Determine population based cutoffs in defined populations, exclude young positive samples with pre-immune status in epi cohort                         | `Figures_S7_S8_Cutoff_Exclusion.R`     | Plot with reactivity in different cohorts and ROC output with threshold                          |
-| Figure_S9_Rec_Feat_Select | **Figure S9**  | Feature elimination                          | `Figure_S9.R`              | F1 impact plots after antigen removal                                        |
-| Figure_S11_Classical_ROC | **Figure S11**, **Table S12** | ROC performance                              | `Figure_S11_Classical_ROC_Rev_02.R`   | ROC curves, threshold parameters                        |
-| Figure_S12_Density_Plots | **Figure S12** | Density plots                                | `Fig_S12.R`                       | Density plots                                           |
-| Figure_S13_Repro | **Figure S13** | Reproducibility                              | `plotComparison_V3.R`                 | Reproducibility figure                                  |
+| Folder | Figure(s) / Table(s) | Purpose                                      | Output                                                  |
+| ------ | -------------- | -------------------------------------------- | ------------------------------------------------------- |
+| Figure_2_Compare_Panels | **Figure 2**, **Figure S3**, **Figure S4**, **Figure S5**   | Compare IgG & IgM across serogroups & panels | Spider plots, antigen ratios, IgG and IgM plots                 |
+| Figure_3ab_ML_Performance | **Figure 3**, **Table S9**   | ML performance comparison                    |  F1 plots, circular misclassification plots, supporting table performance comparison |
+| Figure_3c_Conf_Matr | **Figure 3c**  | Confusion matrices for LDA, GBC, RF                    | Plot confusion matrices, tables of ensemble prediction on combined cohort |
+| Figure_4_Val_V2 | **Figure 4**, **Fig_S10**, **Table_S10**,   | Validation panel analysis                    | IgG/IgM heatmaps, ensemble confusion matrices validation, tables of ensemble prediction on validation cohort           |
+| Figure_S1_Method_Comparison | **Figure S1**, **Figure S2**  | Comparison with ELISA/IFA/NT                 | Correlation plots, Passing-Bablok regression            |
+|  | **Figure S6**  | Bead coupling quality                        | Coupling control and variability plots                  |
+| Figure_S6_Bead_coupling | **Figure S6**  | Antigen specificity and coupling efficiency                          | Coupling control plots                          |
+| Figure_S7_8 | **Figure S7**, **Figure S8**  | Determine population based cutoffs in defined populations, exclude young positive samples with pre-immune status in epi cohort                         | Plot with reactivity in different cohorts and ROC output with threshold                          |
+| Figure_S9_Rec_Feat_Select | **Figure S9**  | Feature elimination                          | F1 impact plots after antigen removal                                        |
+| Figure_S11_Classical_ROC | **Figure S11**, **Table S12** | ROC performance                              | ROC curves, threshold parameters                        |
+| Figure_S12_Density_Plots | **Figure S12** | Density plots                                | Density plots                                           |
+| Figure_S13_Repro | **Figure S13** | Reproducibility                              | Reproducibility figure                                  |
 
 *(Full details are in each figure’s folder.)*
 
