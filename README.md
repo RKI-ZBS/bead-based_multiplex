@@ -61,25 +61,27 @@ install.packages(c("tidyverse", "ggplot2", "ComplexHeatmap", "caret", "yardstick
 
 * Navigate to the corresponding figure/table folder.
 * Open the respective R script in RStudio.
-* Ensure the required input files are present.
 * Run the script to generate figures/tables.
+* All necessary  input files are contained within the input folder
 
 ---
 
 ## **Analysis & Figures**
 
-| Folder | Figure / Table | Purpose                                      | R Script                              | Input Files                                                                           | Output                                                  |
-| ------ | -------------- | -------------------------------------------- | ------------------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------- |
-| ------ | **Figure 2**   | Compare IgG & IgM across serogroups & panels | `Figure_2_Compare_Panels_Rev_02_V2.R` | `dataInputComparePanels.Rdata`                                                        | Spider plots, antigen ratios, IgM plots                 |
-| ------ | **Figure 3**   | ML performance comparison                    | `Figure_3_Rev_02.R`                   | `dataInMeta.Rdata`, `statisticalDataCombined.Rdata`                                   | F1 plots, circular misclassification plots, freq tables |
-| ------ | **Figure 4**   | Validation panel analysis                    | `Figure_4_Val_Rev_02_V6.R`            | `dataInputComparison.Rdata`, `ensemblePrediction_Rev_02.Rdata`, `heatmap_input.Rdata` | IgG/IgM heatmaps, ensemble confusion matrices           |
-| ------ | **Figure S1**  | Comparison with ELISA/IFA/NT                 | `Fig_1_Method_Comparison.R`           | Multiple `.Rdata` inputs                                                              | Correlation plots, Passing-Bablok regression            |
-| ------ | **Figure S6**  | Bead coupling quality                        | `analyseCoupling.R`                   | `dataInputBatch.Rdata`, `dataInputPlotting.Rdata`                                     | Coupling control and variability plots                  |
-| ------ | **Figure S8**  | Confusion matrices                           | `Figure_S08_Conf_Mat_Rev_02_V5.R`     | `ensembleCombined_Rev_02.Rdata`                                                       | Confusion matrix PDFs & PNGs                            |
-| ------ | **Figure S9**  | Feature elimination                          | `Analyse_Benchmark_V6.R`              | `dataInputFeatElim.Rdata`                                                             | F1 impact plots                                         |
-| ------ | **Figure S11** | ROC performance                              | `Figure_S11_Classical_ROC_Rev_02.R`   | `dataInWide.Rdata`                                                                    | ROC curves, threshold parameters                        |
-| ------ | **Figure S12** | Density plots                                | `densityPlot.R`                       | `dataInputComparePanels.Rdata`, `heatmap_input.Rdata`                                 | Density plots                                           |
-| ------ | **Figure S13** | Reproducibility                              | `plotComparison_V3.R`                 | `dataInRep.Rdata`, `dataInRepSpoxFiltered.Rdata`                                      | Reproducibility figure                                  |
+| Folder | Figure(s) / Table(s) | Purpose                                      | R Script                               | Output                                                  |
+| ------ | -------------- | -------------------------------------------- | ------------------------------------- | ------------------------------------------------------- |
+| Figure_2_Compare_Panels | **Figure 2**, **Figure S3**, **Figure S4**, **Figure S5**   | Compare IgG & IgM across serogroups & panels | `Figure_2_Compare_Panels_Rev_02_V2.R` | Spider plots, antigen ratios, IgG and IgM plots                 |
+| Figure_3ab_ML_Performance | **Figure 3**, **Table S9**   | ML performance comparison                    | `Figure_3_Rev_02.R`                   | F1 plots, circular misclassification plots, supporting table performance comparison |
+| Figure_3c_Conf_Matr | **Figure 3c**  | Confusion matrices for LDA, GBC, RF                    | `Figure_03c_Rev_02.R`                   | Plot confuction matrices, tables of ensemble predicition on combined cohort |
+| Figure_4_Val_V2 | **Figure 4**, **Fig_S10**, **Table_S10**,   | Validation panel analysis                    | `Figure_4_Val_Rev_02_V6.R`            | IgG/IgM heatmaps, ensemble confusion matrices validation, tables of ensemble prediction on validation cohort           |
+| Figure_S1_Method_Comparison | **Figure S1**, **Figure S2**  | Comparison with ELISA/IFA/NT                 | `Fig_1_Method_Comparison.R`           | Correlation plots, Passing-Bablok regression            |
+|  | **Figure S6**  | Bead coupling quality                        | `analyseCoupling.R`                   | Coupling control and variability plots                  |
+| Figure_S6_Bead_coupling | **Figure S6**  | Antigen specificity and coupling efficiency                          | `Figure_S06.R`     | Coupling control plots                          |
+| Figure_S7_8 | **Figure S7**, **Figure S8**  | Determine population based cutoffs in defined populations, exclude young positive samples with pre-immune status in epi cohort                         | `Figures_S7_S8_Cutoff_Exclusion.R`     | Plot with reactivity in different cohorts and ROC output with threshold                          |
+| Figure_S9_Rec_Feat_Select | **Figure S9**  | Feature elimination                          | `Figure_S9.R`              | F1 impact plots after antigen removal                                        |
+| Figure_S11_Classical_ROC | **Figure S11**, **Table S12** | ROC performance                              | `Figure_S11_Classical_ROC_Rev_02.R`   | ROC curves, threshold parameters                        |
+| Figure_S12_Density_Plots | **Figure S12** | Density plots                                | `Fig_S12.R`                       | Density plots                                           |
+| Figure_S13_Repro | **Figure S13** | Reproducibility                              | `plotComparison_V3.R`                 | Reproducibility figure                                  |
 
 *(Full details are in each figure’s folder.)*
 
@@ -87,12 +89,10 @@ install.packages(c("tidyverse", "ggplot2", "ComplexHeatmap", "caret", "yardstick
 
 ## **Tables**
 
-| Table                | Purpose                                 | Input Files                       | Output                                                   |
-| -------------------- | --------------------------------------- | --------------------------------- | -------------------------------------------------------- |
-| **Table 3**          | Ensemble performance bootstrap analysis | Multiple `.Rdata`                 | `table_3.xlsx`, `table_s11.xlsx`, `table_s12.xlsx`       |
-| **Table S10**        | Validation panel results                | `ensemblePrediction_Rev_02.Rdata` | `STableEnsemblePrediction.xlsx`                          |
-| **Table S12**        | ROC performance parameters              | `dataInWide.Rdata`                | `ROC_parameters_classic.xlsx`                            |
-| **Tables S13 & S14** | Single vs ML classifier comparison      | Multiple `.Rdata`                 | `supporting_table_s13.xlsx`, `supporting_table_s14.xlsx` |
+| Folder | Table                | Purpose                                 | Output                                                   |
+| ------ | -------------------- | --------------------------------------- |-------------------------------------------------------- |
+| Table_3_Ensemble_Performance | **Table 3**, **Table S11**, **Table S12**          | Ensemble performance bootstrap analysis | `table_3.xlsx`, `table_s11.xlsx`, `table_s12.xlsx`       |                  |
+| Table_S13_S14 | **Tables S13 & S14** | Single vs ML classifier comparison      | `supporting_table_s13.xlsx`, `supporting_table_s14.xlsx` |
 
 ---
 
