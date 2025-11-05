@@ -1,7 +1,9 @@
-# Mpox Multiplex Assay
+# **Machine learning-supported framework for the classification of mpox infection and MVA immunization from multiplexed serology data**
+*Surtees, R., Treindl, F., Akhmedova, S., Beslic, D. et al.*
 
-**Differentiation between mpox infection and MVA immunization by a novel machine learning–supported serological multiplex assay**
-*Surtees et al.*
+**This repository contains the underlying data files and analysis scripts used in the study.**
+
+A preprint is available at: https://doi.org/10.21203/rs.3.rs-4822502/v1
 
 [![R Version](https://img.shields.io/badge/R-v4.3.0-blue.svg)](https://cran.r-project.org/)
 [![RStudio](https://img.shields.io/badge/RStudio-2025.05.1-blue.svg)](https://posit.co/)
