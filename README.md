@@ -29,8 +29,8 @@ A preprint is available at: https://doi.org/10.21203/rs.3.rs-4822502/v1
 
 This repository contains all data, R scripts, and analysis files to recreate all figures and tables from the manuscript:
 
-> **“Differentiation between mpox infection and MVA immunization by a novel machine learning–supported serological multiplex assay”**
-> by Surtees et al.
+> **“Machine learning-supported framework for the classification of mpox infection and MVA immunization from multiplexed serology data”**
+> by Surtees, R., Treindl, F., Akhmedova, S., Beslic, D. et al.
 
 It provides:
 
@@ -113,4 +113,4 @@ install.packages(c("tidyverse", "ggplot2", "ComplexHeatmap", "caret", "yardstick
 This repository is distributed under the [MIT License](LICENSE).
 If you use this code or data, please cite:
 
-> Surtees et al. *Differentiation between mpox infection and MVA immunization by a novel machine learning–supported serological multiplex assay*, **\[Under Revision]**
+> Surtees, R., Treindl, F., Akhmedova, S., Beslic, D. et al. *Machine learning-supported framework for the classification of mpox infection and MVA immunization from multiplexed serology data*, **\[Under Revision]**
